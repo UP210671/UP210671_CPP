@@ -13,7 +13,7 @@ Descriptions:My first program in C++
 //--------------------MAIN FUNCTION----------------------------
     int main(){
         //Print on screen a text
-        std::cout<<"Hellou World! This is my first program";
+        std::cout<<"Hellou World! This is my first program"<<std::endl;
 
     //Return 0 means that the programm ends succesfully
     return 0;
