@@ -21,7 +21,7 @@ int main()
     cout << "El número es diferente del dato" << endl;
    }
    if (numero != dato){
-    cout << "El número es igual a dato" << endl;
+    cout << "El número es diferente del dato" << endl;
    }   
    else{
     cout << "El número es diferente del dato" << endl;
