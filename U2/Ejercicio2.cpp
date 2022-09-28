@@ -7,7 +7,7 @@ Descriptions:Exercise 2
 #include <iostream>
 using namespace std;
 int main(){
-    float c;
+    double c;
     cout<<"¿What is your calification?"<<endl;
     cin>>c;
     if ((c == 0)||(c == 0.4)||(c >= 0.6 && c <= 1)){
