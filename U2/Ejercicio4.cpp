@@ -1,55 +1,41 @@
-/*0/*
-Date:28/09/2022
+/*Date:28/09/2022
 Author: Cesar Eduardo Juarez Jasso
 Email: UP210671@alumnos.upa.edu.mx
-Descriptions:Exercise 3 
-*/
-/*#include <iostream>
-#include <cstdlib>
-using namespace std;
-int main(){
-    int pp,ps,pv,pc,opcion;
-    cout<<"What pizza with you chose?";
-    cout<<"\nEstas opciones :     Vegetariana         o       Carnes Frias";    
-    cin>>ps;
-    cout<<"Estos son los ingredientes","\n","Tofu" ;
-
-    
-}
-*/
-/*
-Date:28/09/2022
-Author: Cesar Eduardo Juarez Jasso
-Email: UP210671@alumnos.upa.edu.mx
-Descriptions:Exercise 3 
+Descriptions:Exercise 4 
 */
 #include <iostream>
 using namespace std;
 int main(){
     int p,pe,i;
-    
-    cout<<"Tu pizza es vegetariana o de Carnes Frias ?\n Si tu pizza es vegetariana teclea: 1, si es de carnes frias teclea: 2 \n Tu seleccion es:";
+    cout<<"Your pizza is vegetarian or cold meat ?\n If your pizza is vegetarian type: 1, if it is cold meat type: 2 \n Your selection is:";
     cin>>p;
     if (p==1){
         if (p==1){
-            cout << "----------Estos son los ingredientes:      1-Pimiento       2-Tofu----------\nSeleccione el ingrediente con el numero que le corresponde:"<<endl;
+            cout << "----------These are the ingredients: 1-Pepper 2-Tofu----------\nSelect the ingredient with the number that corresponds to it:"<<endl;
             cin>>i;
-            if (i=1){
-                cout<<"Esta es tu pizza y estos son tus ingredientes: \n-Motzarela\n-Tomate-Pimiento\n-\n\n";
+            if (i==1){
+                cout<<"This is your pizza and these are your ingredients: \n-Motzarela\n-Tomato\n-Pepper\n\n\n";
             }
-
-            else if (i=2)
+            else if (i==2)
             {
-                cout<<"Esta es tu pizza y estos son tus ingredientes: \n-Motzarela\n-Tomate\n-Tofu"<<endl;
-                
-            }
-            
+                cout<<"This is your pizza and these are your ingredients: \n-Motzarela\n-Tomato\n-Tofu"<<endl;   
+            }       
     }
-
 }
     else {
-            cout << "----------Estos son los ingredientes:      1-Pimiento       2-Jamon       3-Salmon -----------\nSeleccione el ingrediente con el numero que le corresponde:"<<endl;
+            cout << "----------These are the ingredients: 1-Peperoni 2-Ham 3-Salmon -----------\nSelect the ingredient with the number that corresponds to it:"<<endl;
             cin>>i;
+            if (i==1){
+                cout<<"This is your pizza and these are your ingredients: \n-Motzarela\n-Tomato\n-Pepperoni\n\n\n";
+            }
+            else if (i==2)
+            {
+                cout<<"This is your pizza and these are your ingredients: \n-Motzarela\n-Tomato\n-Ham"<<endl;
+            }
+            else if (i==3)
+            {
+                cout<<"This is your pizza and these are your ingredients: \n-Motzarela\n-Tomato\n-Salmon"<<endl;     
+            }
     }
 return 0;
 }
