@@ -7,7 +7,7 @@ int main(){
     do
     {
         /* code */
-        cout<<"Product"<<numproducto<<"\nAmount";
+        cout<<"Product "<<numproducto<<"\nAmount: ";
         cin>>amount;
         if (amount<=0)
         {
@@ -26,6 +26,6 @@ int main(){
         numproducto++;
         total += (price * amount);
     } while (price !=0);
-    cout<<"\nYou've inputted a total of "<<numproducto-2 << "different products. ";
+    cout<<"\nYou've inputted a total of "<<numproducto-2 << " 2different products. ";
     cout<<"\nYour total is $"<<total<<" \n\n";        
 }
