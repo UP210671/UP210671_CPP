@@ -17,28 +17,28 @@ int main(){
         cout<<"Your tax to pay is: "<<I<<"\n\n";
         cout<<"Your total to pay is "<<T<<"\n\n";
     }
-    if(R>10000){
+    else if(R>10000){
         cout<<"Your percentage to pay is: 15%"<<endl;
         I=R*.15;
         T=I+R;
         cout<<"Your tax to pay is: "<<I<<"\n\n";
         cout<<"Your total to pay is "<<T<<"\n\n";
     }
-    if(R>=20000){
+    else if(R>=20000){
         cout<<"Your percentage to pay is: 20%"<<endl;
         I=R*.20;
         T=I+R;
         cout<<"Your tax to pay is: "<<I<<"\n\n";
         cout<<"Your total to pay is "<<T<<"\n\n";
     }
-    if(R>=35000){
+    else if(R>=35000){
         cout<<"Your percentage to pay is: 30%"<<endl;
         I=R*.30;
         T=I+R;
         cout<<"Your tax to pay is: "<<I<<"\n\n";
         cout<<"Your total to pay is "<<T<<"\n\n";
     }
-    if(R>=60000){
+    else if(R>=60000){
         cout<<"Your percentage to pay is: 45%"<<endl;
         I=R*.45;
         T=I+R;
@@ -46,3 +46,160 @@ int main(){
         cout<<"Your total to pay is "<<T<<"\n\n";
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

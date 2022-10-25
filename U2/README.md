@@ -1,6 +1,6 @@
 <h1 align="center",>
 Welcome to unit two folder: Control structures and cycles
-<h1>
+</h1>
 <div align = "center">
 <img src="../imagenes/welcome.gif" width="500">
 </div>
@@ -16,7 +16,7 @@ Welcome to unit two folder: Control structures and cycles
 - [Exercise 7](./Ejercicio7.cpp)
 - [Exercise 8](./Ejercicio8.cpp)
 
-<center> <h4>Exercise 1.Program that asks the user for their annual income and shows on the screen the corresponding tax</h4> </center>
+<center> <h2>Exercise 1.Program that asks the user for their annual income and shows on the screen the corresponding tax</h2> </center>
  <H1><span style="color:green">INPUT</span>
 
  ```c++
@@ -79,3 +79,34 @@ The program works this way:
 6.- Print out the rent the user initially pays, the tax to pay, the your porcentage to pay.
 7.- Use Return 0 to check if the program is running correctly.
 ```
+
+<H1><span style=color:BROWN>TEST</span>
+
+    1. "9999"
+<div align = "center">
+<img src="../imagenes/u1.png" width="200">
+</div>
+
+    2. "10001"
+<div align = "center">
+<img src="../imagenes/u2.png" width="200">
+</div>
+
+    3. 20000
+<div align = "center">
+<img src="../imagenes/u3.png" width="200">
+</div>
+
+    4. 35000
+<div align = "center">
+<img src="../imagenes/u4.png" width="200">
+</div>
+
+    5. 60000
+<div align = "center">
+<img src="../imagenes/u5.png" width="200">
+</div>
+
+<h2 align="center">
+
+[[RETURN TO MENU]](https://github.com/UP210671/UP210671_CPP/blob/main/README.md#up210671_cpp) [[RETURN TO INDEX]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#index)
