@@ -242,11 +242,21 @@ It works the following way:
 </h1>
 
 * <3
-    <div align = "center">
-<img src="../imagenes/u5.png" width="200">
+<div align = "center">
+<img src="../imagenes/a3.png" width="200">
 </div>
+
 * 4-18
-  
+<div align = "center">
+<img src="../imagenes/a31.png" width="200">
+</div>
+
 * +18
+<div align = "center">
+<img src="../imagenes/a32.png" width="200">
+</div>
 
 * Invalid
+<div align = "center">
+<img src="../imagenes/a33.png" width="200">
+</div>
