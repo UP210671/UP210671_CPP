@@ -14,22 +14,23 @@ Welcome to unit two folder: Control structures and cycles
 
 [[Exercise 3]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-3game-center-customer-price) <----- [\CODE/](./Ejercicio3.cpp)
 
-[[Exercise 4]]() <----- [\CODE/](./Ejercicio4.cpp)
+[[Exercise 4]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-4vegetarian-pizza-ingredient-selection) <----- [\CODE/](./Ejercicio4.cpp)
 
-[[Exercise 5]]() <----- [\CODE/](./Ejercicio5.cpp)
+[[Exercise 5]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-5average-temperature-maxium-and-minium-value) <----- [\CODE/](./Ejercicio5.cpp)
 
-[[Exercise 6]]() <----- [\CODE/](./Ejercicio6.cpp)
+[[Exercise 6]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-6products-selling-totals) <----- [\CODE/](./Ejercicio6.cpp)
 
-[[Exercise 7]]() <----- [\CODE/](./Ejercicio7.cpp)
+[[Exercise 7]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-7decimal-number-to-binary-value) <----- [\CODE/](./Ejercicio7.cpp)
 
-[[Exercise 8]]() <----- [\CODE/](./Ejercicio8.cpp)
+[[Exercise 8]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-8product-of-a-number-done-x-times-in-a-table-format) <----- [\CODE/](./Ejercicio8.cpp)
 
-[[Exercise 9]]() <----- [\CODE/](./Ejercicio9.cpp)
+[[Exercise 9]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-9find-the-root-in-a-graph-using-the-bisection-method) <----- [\CODE/](./Ejercicio9.cpp)
 
 </center>
 <h1>
 </h1>
-<center> <h2>Exercise 1.Program that asks the user for their annual income and shows on the screen the corresponding tax</h2></center> <center><img src="../imagenes/E1.gif" width="150"></center>
+<center> <h2>Exercise 1.Program that asks the user for their annual income and shows on the screen the corresponding tax</h2></center>
+<div align = "center"><img src="../imagenes/E1.gif" width="150"></div>
  <H1><span style="color:green">INPUT</span>
 
 </h1>
