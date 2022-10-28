@@ -6,7 +6,7 @@ Welcome to unit two folder: Control structures and cycles
 </div>
 
  ## Index:  
-<center>
+<div align = "center">
 
 [[Exercise 1]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-1program-that-asks-the-user-for-their-annual-income-and-shows-on-the-screen-the-corresponding-tax) <----- [\CODE/](./Ejercicio1.cpp)
 
@@ -26,7 +26,7 @@ Welcome to unit two folder: Control structures and cycles
 
 [[Exercise 9]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-9find-the-root-in-a-graph-using-the-bisection-method) <----- [\CODE/](./Ejercicio9.cpp)
 
-</center>
+</div>
 <h1>
 </h1>
 <center> <h2>Exercise 1.Program that asks the user for their annual income and shows on the screen the corresponding tax</h2></center>
@@ -132,7 +132,8 @@ The program works this way:
 </h2>
 <h1>
 </h1>
-<center> <h2>Exercise 2.Program for calculating a bonus based on an employee evaluation</h2> <img src="../imagenes/E2.gif" width="155"></center>
+<center> <h2>Exercise 2.Program for calculating a bonus based on an employee evaluation</h2></center>
+<div align = "center"><img src="../imagenes/E2.gif" width="155"></div>
  <H1><span style="color:green">INPUT</span>
 </h1>
 
@@ -206,15 +207,15 @@ Employees are rated based on their work perfomance; this program is about giving
 </div>
 <h1>
 </h1>
-<center> <h2>Exercise 3.Game center customer price</h2><img src="../imagenes/E3.gif" width="75"> </center>
- <H1><span style="color:green">INPUT</span>
+<center> <h2>Exercise 3.Game center customer price</h2></center>
+<div align = "center"><img src="../imagenes/E3.gif" width="75"></div>
+ <H1><span style="color:green">INPUT</span></h1>
 
  ```c++
  cout<<"How old are you ? ";
  cin>>e;
  ```
-<H1><span style="color:purple">PROCESS</span>
-</h1>
+<H1><span style="color:purple">PROCESS</span></h1>
 
 ```c++
 if (e>=0){
@@ -290,7 +291,8 @@ It works the following way:
 </div>
 <h1>
 </h1>
-<center> <h2>Exercise 4.Vegetarian pizza ingredient selection</h2> <img src="../imagenes/E4.gif" width="175"></center>
+<center> <h2>Exercise 4.Vegetarian pizza ingredient selection</h2></center>
+<div align = "center"><img src="../imagenes/E4.gif" width="175"></div>
  <H1><span style="color:green">INPUT</span>
 </h1>
 
@@ -387,7 +389,8 @@ The program works the following way:
 
 <h1>
 </h1>
-<center> <h2>Exercise 5.Average temperature, maxium and minium value.</h2> <img src="../imagenes/E5.gif" width="175"></center>
+<center> <h2>Exercise 5.Average temperature, maxium and minium value.</h2></center> 
+<div align = "center"><img src="../imagenes/E5.gif" width="175"></div>
  <H1><span style="color:green">INPUT</span>
 </h1>
 
@@ -446,7 +449,8 @@ Output the average, minium and maxium value of the 6 inputs.
 </div>
 <h1>
 </h1>
-<center> <h2>Exercise 6.Products selling totals.</h2> <img src="../imagenes/E6.gif" width="175"></center>
+<center> <h2>Exercise 6.Products selling totals.</h2></center>
+<div align="center"><img src="../imagenes/E6.gif" width="175"></div>
  <H1><span style="color:green">INPUT</span>
 </h1>
 
@@ -518,7 +522,8 @@ This program is used to calculate the selling profits of a user. The user inputs
 </div>
 <h1>
 </h1>
-<center> <h2>Exercise 7.Decimal number to binary value.</h2> <img src="../imagenes/E7.gif" width="175"></center>
+<center> <h2>Exercise 7.Decimal number to binary value.</h2></center>
+<div align = "center"><img src="../imagenes/E7.gif" width="175"></div>
  <H1><span style="color:green">INPUT</span>
 </h1>
 
@@ -603,7 +608,8 @@ The user writes a normal decimal value (it must be a whole number) and the progr
 </div>
 <h1>
 </h1>
-<center> <h2>Exercise 8.Product of a number done X times in a table format.</h2> <img src="../imagenes/E8.gif" width="175"></center>
+<center> <h2>Exercise 8.Product of a number done X times in a table format.</h2> </center>
+<div align = "center"><img src="../imagenes/E8.gif" width="175"></div>
  <H1><span style="color:green">INPUT</span>
 </h1>
 
@@ -678,7 +684,8 @@ The program asks the user to input a number to be the multiplying factor of the 
 </div>
 <h1>
 </h1>
-<center> <h2>Exercise 9.Find the root in a graph using the bisection method.</h2> <img src="../imagenes/E9.gif" width="175"></center>
+<center> <h2>Exercise 9.Find the root in a graph using the bisection method.</h2> </center>
+<div align = "center"><img src="../imagenes/E9.gif" width="175"></div>
  <H1><span style="color:green">INPUT</span>
 </h1>
 
