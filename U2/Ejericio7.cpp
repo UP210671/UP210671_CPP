@@ -1,3 +1,9 @@
+/*
+Date:05/10/2022
+Author: Cesar Eduardo Juarez Jasso
+Email: UP210671@alumnos.upa.edu.mx
+Descriptions:Exercise 7 
+*/
 #include <iostream>
 using namespace std;
  int main (){

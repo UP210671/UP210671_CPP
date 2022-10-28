@@ -1,3 +1,9 @@
+/*
+Date:12/10/2022
+Author: Cesar Eduardo Juarez Jasso
+Email: UP210671@alumnos.upa.edu.mx
+Descriptions:Exercise 8 
+*/
 #include <iostream>
 using namespace std;
 int main(){
@@ -8,7 +14,7 @@ int main(){
     cin >> n;
 
     // Ask the user for the limit
-    cout << "How many times do you want it multiplied";
+    cout << "How many times do you want it multiplied: ";
     cin >>c;
 
     if (c>=0 || c <=0){

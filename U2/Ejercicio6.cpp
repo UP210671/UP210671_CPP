@@ -1,3 +1,9 @@
+/*
+Date:05/10/2022
+Author: Cesar Eduardo Juarez Jasso
+Email: UP210671@alumnos.upa.edu.mx
+Descriptions:Exercise 6 
+*/
 #include <iostream>
 using namespace std;
 int main(){
@@ -26,6 +32,6 @@ int main(){
         numproducto++;
         total += (price * amount);
     } while (price !=0);
-    cout<<"\nYou've inputted a total of "<<numproducto-2 << " 2different products. ";
+    cout<<"\nYou've inputted a total of "<<numproducto-2 << " different products. ";
     cout<<"\nYour total is $"<<total<<" \n\n";        
 }
