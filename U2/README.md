@@ -29,7 +29,7 @@ Welcome to unit two folder: Control structures and cycles
 </center>
 <h1>
 </h1>
-<center> <h2>Exercise 1.Program that asks the user for their annual income and shows on the screen the corresponding tax</h2> <img src="../imagenes/E1.gif" width="150"></center>
+<center> <h2>Exercise 1.Program that asks the user for their annual income and shows on the screen the corresponding tax</h2></center> <center><img src="../imagenes/E1.gif" width="150"></center>
  <H1><span style="color:green">INPUT</span>
 
 </h1>
