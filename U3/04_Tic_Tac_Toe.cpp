@@ -1,172 +1,149 @@
 #include <iostream>
-#include <cstring>
-#include <algorithm>
-#include <ctime>
-
 using namespace std;
 
-#define compareBoxes(box1, box2, box3) ((board[box1] == board[box2]) && (board[box2] == board[box3]) && (board[box1] != 0)) //Checkes if three items are the same, and makes sure they're not 0's.
-#define numberToLetter(x) ((x > 0) ? (x == 1) ? 'X' : 'O' : ' ') //Takes the number and turns it into the letter or space.
+char square[10] = {'o','1','2','3','4','5','6','7','8','9'};
 
-int getWinner(int board[9]) {
-	//Finds winner of game, if there is no winner, returns 0.
-	int winner = 0;
-	for (int x = 0; x < 3; x++) {
-		if (compareBoxes(3*x, 3*x+1, 3*x+2)) { //Chekcs rows.
-			winner = board[3*x];
-			break;
-		} else if (compareBoxes(x, x+3, x+6)) { //Checks columns.
-			winner = board[x];
-			break;
+int checkwin();
+void board();
 
-		} else if (compareBoxes(2*x, 4, 8-2*x) && (x < 2)) { //Checks diagonals. Doesn't check if x == 2.
-			winner = board[4];
-			break;
-		}
-	}
-	return winner;
-}
-bool gameOver(int board[9]){
-	//Checks if game is over, and announces who won, or if it was a tie.
-	int winner = getWinner(board);
-	if (winner > 0) {
-		cout << numberToLetter(winner) << " wins!"<< endl;
-		return true;
-	} 
-	for (int x = 0; x < 9; x++) {
-		if (board[x] == 0) return false;
-	}
-	cout << "Tie!\n\n";
-	return true;
-}
+int main()
+{
+	int player = 1,i,choice;
 
-int willWin(int board[9], int player) {
-	//Checks if a given player could win in the next plank.
-	for (int x = 0; x < 9; x++) {
-		int tempBoard[9];
-		memcpy(tempBoard, board, 36);
-		if (board[x] > 0) continue;
-		tempBoard[x] = player;
-		if(getWinner(tempBoard) == player) return x;
-	}
-	return -1;
-}
+    char mark;
+    do
+    {
+        board();
+        player=(player%2)?1:2;
 
-int exceptionalCase(int board[9]) {
-	//Finds bords that are exceptions to how the algorithm works.
-	int cases[2][9] = {{1,0,0,0,2,0,0,0,1}, {0,1,0,1,2,0,0,0,0}}; //Boards that don't work with algorithm.
-	int answers[2][4] = {{3,3,3,3}, {2,8,6,0}};
-	int rotatedBoard[9] = {6,3,0,7,4,1,8,5,2};
-	int newBoard[9];
-	int tempBoard[9];
-	for(int x = 0; x < 9; x++) {
-		newBoard[x] = board[x];
-	}
-	for (int caseIndex = 0; caseIndex < 2; caseIndex++) {
-		for(int rotation = 0; rotation < 4; rotation++) {
-			for (int x = 0; x < 9; x++) 
-				tempBoard[x] = newBoard[x];
-			
-			int match = 0;
-			//Rotates board so it works with different versions of the same board.
-			for (int box = 0; box < 9; box++) {
-				newBoard[box] = tempBoard[rotatedBoard[box]];
-			}
+        cout << "Player " << player << ", enter a number:  ";
+        cin >> choice;
 
-			for (int x = 0; x < 9; x++) {
-				if (newBoard[x] == cases[caseIndex][x]) match++;
-				else break;
-			}
-			if (match == 9) return answers[caseIndex][rotation];
-		}
-	}
-	return -1;
+        mark=(player == 1) ? 'X' : 'O';
+
+        if (choice == 1 && square[1] == '1')
+
+            square[1] = mark;
+        else if (choice == 2 && square[2] == '2')
+
+            square[2] = mark;
+        else if (choice == 3 && square[3] == '3')
+
+            square[3] = mark;
+        else if (choice == 4 && square[4] == '4')
+
+            square[4] = mark;
+        else if (choice == 5 && square[5] == '5')
+
+            square[5] = mark;
+        else if (choice == 6 && square[6] == '6')
+
+            square[6] = mark;
+        else if (choice == 7 && square[7] == '7')
+
+            square[7] = mark;
+        else if (choice == 8 && square[8] == '8')
+
+            square[8] = mark;
+        else if (choice == 9 && square[9] == '9')
+
+            square[9] = mark;
+        else
+        {
+            cout<<"Invalid move ";
+
+            player--;
+            cin.ignore();
+            cin.get();
+        }
+        i=checkwin();
+
+        player++;
+    }while(i==-1);
+    board();
+    if(i==1)
+
+        cout<<"==>\aPlayer "<<--player<<" win ";
+    else
+        cout<<"==>\aGame draw";
+
+    cin.ignore();
+    cin.get();
+    return 0;
 }
 
-int getSpace(int board[9], int spaces[4]) {
-	//Gets a random corner or side that's not taken.
-	bool isSpaceEmpty = false;
-	int y;
-	for (int x = 0; x < 4; x++) {
-		if (board[spaces[x]] == 0) {
-			isSpaceEmpty = true;
-			break;
-		}
-	}
-	if (isSpaceEmpty) {
-		do {
-			y = rand() % 4;
-		} while (board[spaces[y]] != 0);
-		return spaces[y];
-	}
-	return -1;
+/*********************************************
+    FUNCTION TO RETURN GAME STATUS
+    1 FOR GAME IS OVER WITH RESULT
+    -1 FOR GAME IS IN PROGRESS
+    O GAME IS OVER AND NO RESULT
+**********************************************/
+
+int checkwin()
+{
+    if (square[1] == square[2] && square[2] == square[3])
+
+        return 1;
+    else if (square[4] == square[5] && square[5] == square[6])
+
+        return 1;
+    else if (square[7] == square[8] && square[8] == square[9])
+
+        return 1;
+    else if (square[1] == square[4] && square[4] == square[7])
+
+        return 1;
+    else if (square[2] == square[5] && square[5] == square[8])
+
+        return 1;
+    else if (square[3] == square[6] && square[6] == square[9])
+
+        return 1;
+    else if (square[1] == square[5] && square[5] == square[9])
+
+        return 1;
+    else if (square[3] == square[5] && square[5] == square[7])
+
+        return 1;
+    else if (square[1] != '1' && square[2] != '2' && square[3] != '3' 
+                    && square[4] != '4' && square[5] != '5' && square[6] != '6' 
+                  && square[7] != '7' && square[8] != '8' && square[9] != '9')
+
+        return 0;
+    else
+        return -1;
 }
 
-void outputBoard(int board[9]) {
-	for(int line = 0; line < 3; line++){
-		for (int box = 0; box < 3; box++) {
-			cout << numberToLetter(board[3*line+box]) << ((box < 2) ? '|' : '\n');
-		}
-		cout << ((line < 2) ? "-----\n" : "\n");
-	}
+
+/*******************************************************************
+     FUNCTION TO DRAW BOARD OF TIC TAC TOE WITH PLAYERS MARK
+********************************************************************/
+
+
+void board()
+{
+    system("clear");
+    cout << "\n\n\tTic Tac Toe\n\n";
+
+    cout << "Player 1 (X)  -  Player 2 (O)" << endl << endl;
+    cout << endl;
+
+    cout << "     |     |     " << endl;
+    cout << "  " << square[1] << "  |  " << square[2] << "  |  " << square[3] << endl;
+
+    cout << "_____|_____|_____" << endl;
+    cout << "     |     |     " << endl;
+
+    cout << "  " << square[4] << "  |  " << square[5] << "  |  " << square[6] << endl;
+
+    cout << "_____|_____|_____" << endl;
+    cout << "     |     |     " << endl;
+
+    cout << "  " << square[7] << "  |  " << square[8] << "  |  " << square[9] << endl;
+
+    cout << "     |     |     " << endl << endl;
 }
 
-int main(){
-	int board[9] = {0,0,0,0,0,0,0,0,0}; //Starts empty board.
-	int possibleWinner;
-	int move;
-	bool isInvalid;
-	string moveString;
-	srand((int) time(0));
-	int corners[4] = {0,2,6,8};
-	int sides[4] = {1,3,5,7};
-
-	cout << "1|2|3\n-----\n4|5|6\n-----\n7|8|9\n\n";
-
-	while (true) {
-		//Player X decides what move they'll do.
-		do {
-			cout << "X: ";
-			getline(cin, moveString);
-			move = moveString[0] - '1';
-			if (move > 8 || move < 0 || board[move] != 0) {
-				cout << "Invalid input" << endl;
-				isInvalid = true;
-			} else {
-				board[move] = 1;
-				isInvalid = false;
-				cout << endl;
-			}
-		} while (isInvalid);
-
-		//Decides whether or not the game continues.
-		if (gameOver(board) > 0) {
-			outputBoard(board);
-			break;
-		}
-
-		//Player O decides which move they'll do.
-		bool good = false;
-		for (int x = 2; x > 0; x--){
-			possibleWinner = willWin(board, x);
-			if (possibleWinner != -1) {
-				board[possibleWinner] = 2;
-				good = true;
-				break;
-			}
-		}
-		if (good);
-		else if (board[4] == 0) board[4] = 2; //Middle.
-		else if (exceptionalCase(board) > -1) board[exceptionalCase(board)] = 2; //Exception boards.
-		else if (getSpace(board, corners) != -1) board[getSpace(board, corners)] = 2; //Corners
-		else board[getSpace(board, sides)] = 2; //Sides
-		
-		//Prints the board to the screen.
-		outputBoard(board);
-
-		//Decides whether or not the game continues.
-		if(gameOver(board)) break;
-
-	}
-	return 0;
-}
+/*******************************************************************
+                END OF PROJECT
+********************************************************************/
