@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-char square[10] = {'o','1','2','3','4','5','6','7','8','9'};
+char tablero[10] = {'o','1','2','3','4','5','6','7','8','9'};
 
 int checkwin();
 void board();
@@ -21,36 +21,36 @@ int main()
 
         mark=(player == 1) ? 'X' : 'O';
 
-        if (choice == 1 && square[1] == '1')
+        if (choice == 1 && tablero[1] == '1')
 
-            square[1] = mark;
-        else if (choice == 2 && square[2] == '2')
+            tablero[1] = mark;
+        else if (choice == 2 && tablero[2] == '2')
 
-            square[2] = mark;
-        else if (choice == 3 && square[3] == '3')
+            tablero[2] = mark;
+        else if (choice == 3 && tablero[3] == '3')
 
-            square[3] = mark;
-        else if (choice == 4 && square[4] == '4')
+            tablero[3] = mark;
+        else if (choice == 4 && tablero[4] == '4')
 
-            square[4] = mark;
-        else if (choice == 5 && square[5] == '5')
+            tablero[4] = mark;
+        else if (choice == 5 && tablero[5] == '5')
 
-            square[5] = mark;
-        else if (choice == 6 && square[6] == '6')
+            tablero[5] = mark;
+        else if (choice == 6 && tablero[6] == '6')
 
-            square[6] = mark;
-        else if (choice == 7 && square[7] == '7')
+            tablero[6] = mark;
+        else if (choice == 7 && tablero[7] == '7')
 
-            square[7] = mark;
-        else if (choice == 8 && square[8] == '8')
+            tablero[7] = mark;
+        else if (choice == 8 && tablero[8] == '8')
 
-            square[8] = mark;
-        else if (choice == 9 && square[9] == '9')
+            tablero[8] = mark;
+        else if (choice == 9 && tablero[9] == '9')
 
-            square[9] = mark;
+            tablero[9] = mark;
         else
         {
-            cout<<"Invalid move ";
+            cout<<"Invalid move ----------> Plase enter for last move  ";
 
             player--;
             cin.ignore();
@@ -81,33 +81,33 @@ int main()
 
 int checkwin()
 {
-    if (square[1] == square[2] && square[2] == square[3])
+    if (tablero[1] == tablero[2] && tablero[2] == tablero[3])
 
         return 1;
-    else if (square[4] == square[5] && square[5] == square[6])
+    else if (tablero[4] == tablero[5] && tablero[5] == tablero[6])
 
         return 1;
-    else if (square[7] == square[8] && square[8] == square[9])
+    else if (tablero[7] == tablero[8] && tablero[8] == tablero[9])
 
         return 1;
-    else if (square[1] == square[4] && square[4] == square[7])
+    else if (tablero[1] == tablero[4] && tablero[4] == tablero[7])
 
         return 1;
-    else if (square[2] == square[5] && square[5] == square[8])
+    else if (tablero[2] == tablero[5] && tablero[5] == tablero[8])
 
         return 1;
-    else if (square[3] == square[6] && square[6] == square[9])
+    else if (tablero[3] == tablero[6] && tablero[6] == tablero[9])
 
         return 1;
-    else if (square[1] == square[5] && square[5] == square[9])
+    else if (tablero[1] == tablero[5] && tablero[5] == tablero[9])
 
         return 1;
-    else if (square[3] == square[5] && square[5] == square[7])
+    else if (tablero[3] == tablero[5] && tablero[5] == tablero[7])
 
         return 1;
-    else if (square[1] != '1' && square[2] != '2' && square[3] != '3' 
-                    && square[4] != '4' && square[5] != '5' && square[6] != '6' 
-                  && square[7] != '7' && square[8] != '8' && square[9] != '9')
+    else if (tablero[1] != '1' && tablero[2] != '2' && tablero[3] != '3' 
+                    && tablero[4] != '4' && tablero[5] != '5' && tablero[6] != '6' 
+                  && tablero[7] != '7' && tablero[8] != '8' && tablero[9] != '9')
 
         return 0;
     else
@@ -129,17 +129,17 @@ void board()
     cout << endl;
 
     cout << "     |     |     " << endl;
-    cout << "  " << square[1] << "  |  " << square[2] << "  |  " << square[3] << endl;
+    cout << "  " << tablero[1] << "  |  " << tablero[2] << "  |  " << tablero[3] << endl;
 
     cout << "_____|_____|_____" << endl;
     cout << "     |     |     " << endl;
 
-    cout << "  " << square[4] << "  |  " << square[5] << "  |  " << square[6] << endl;
+    cout << "  " << tablero[4] << "  |  " << tablero[5] << "  |  " << tablero[6] << endl;
 
     cout << "_____|_____|_____" << endl;
     cout << "     |     |     " << endl;
 
-    cout << "  " << square[7] << "  |  " << square[8] << "  |  " << square[9] << endl;
+    cout << "  " << tablero[7] << "  |  " << tablero[8] << "  |  " << tablero[9] << endl;
 
     cout << "     |     |     " << endl << endl;
 }
