@@ -10,7 +10,6 @@ int main()
         sum = sum + n;
     }
     cout<<"LA SUMA A LLEGADO A 100"<<endl;
-    cout<<"CUANDO OCUPES AYUDA YA SABES PARA ESO ESTAMOS >:D"<<endl;
-
+    cout<<"Sesion terminada"<<endl;
 return 0;
 }
