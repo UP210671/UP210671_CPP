@@ -12,7 +12,7 @@ int main()
 
 	int player = 1,i,choice,GameMode =0,jugada;
     char mark;
-    cout << "                       - Select mode -\n                        [1] 2 PLAYERS \n                        [2] VS CPU\n                    Choise your selectiion :";//GAME MODE
+    cout << "\t                            - Select mode -\n\t                            [1] 2 PLAYERS \n\t                            [2] VS CPU\n\t                            Choise your selectiion :";//GAME MODE
     cin >> GameMode;
     
     
@@ -206,28 +206,28 @@ void board()
     
     cout << "\033[1;33m"<<" \n\n\t                            Tic Tac Toe\n\n";
 
-    cout << "\033[1;33m" << "               Player 1 (X)" << "              -" <<"\033[1;36m" << "              Player 2 (O)" << endl << endl;
+    cout << "\033[1;33m" << "                   Player 1 (X)" << "          -" <<"\033[1;36m" << "          Player 2 (O)" << endl << endl;
     cout << endl;
 
     cout << "\033[1;37m"<<"                                      |     |     " << endl;
-    co1=(tablero[1]== 'X')?33:36;// 
-    co2=(tablero[2]== 'X')?33:36;//   ==funcion para cambiar el color si es X o O
-    co3=(tablero[3]== 'X')?33:36;//
+    co1=(tablero[1]== 'X')?33:(tablero[1]== 'O')?36:37;// 
+    co2=(tablero[2]== 'X')?33:(tablero[2]== 'O')?36:37;//   ==funcion para cambiar el color si es X o O
+    co3=(tablero[3]== 'X')?33:(tablero[3]== 'O')?36:37;//
     cout << "                                   " << "\033[1;" <<  co1 << "m" << tablero[1] << "\033[1;37m"<<"  |  " << "\033[1;" << co2 << "m" << tablero[2] <<"\033[1;37m"<<"  |  " << "\033[1;" << co3 << "m" << tablero[3] << endl;
     
     cout <<"\033[1;37m"<< "                                 _____|_____|_____" << endl;
     cout << "\033[1;37m"<<"                                      |     |     " << endl;
-    co4=(tablero[4]== 'X')?33:36;// 
-    co5=(tablero[5]== 'X')?33:36;//   ==funcion para cambiar el color si es X o O
-    co6=(tablero[6]== 'X')?33:36;//
+    co4=(tablero[4]== 'X')?33:(tablero[4]== 'O')?36:37;// 
+    co5=(tablero[5]== 'X')?33:(tablero[5]== 'O')?36:37;//   ==funcion para cambiar el color si es X o O
+    co6=(tablero[6]== 'X')?33:(tablero[6]== 'O')?36:37;//
     cout << "                                   " << "\033[1;" <<  co4 << "m" << tablero[4] << "\033[1;37m"<< "  |  " << "\033[1;" << co5 << "m" << tablero[5] <<"\033[1;37m"<< "  |  " << "\033[1;" <<  co6 << "m" << tablero[6] << endl;
 
     cout << "\033[1;37m"<<"                                 _____|_____|_____" << endl;
     cout << "\033[1;37m"<<"                                      |     |     " << endl;
 
-    co7=(tablero[7]== 'X')?33:36;// 
-    co8=(tablero[8]== 'X')?33:36;//   ==funcion para cambiar el color si es X o O
-    co9=(tablero[9]== 'X')?33:36;//
+    co7=(tablero[7]== 'X')?33:(tablero[7]== 'O')?36:37;// 
+    co8=(tablero[8]== 'X')?33:(tablero[8]== 'O')?36:37;//   ==funcion para cambiar el color si es X o O
+    co9=(tablero[9]== 'X')?33:(tablero[9]== 'O')?36:37;//
     cout << "                                   " << "\033[1;" <<  co7 << "m" << tablero[7] << "\033[1;37m"<<"  |  " << "\033[1;" << co8 << "m" << tablero[8] <<"\033[1;37m"<< "  |  " << "\033[1;" <<  co9 << "m" << tablero[9] << endl;
     
     cout <<"\033[1;37m"<< "                                      |     |     " << endl << endl;
