@@ -7,7 +7,7 @@ Welcome to the game of " Tic Tac Toe ".
 </h2>
 
 <div align = "center">
-<img src="../imagenes/Tic.gif" width="45550">
+<img src="../imagenes/Tic.gif" width="450">
 </div>
 
  ## Index:  
