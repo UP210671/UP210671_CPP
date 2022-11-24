@@ -17,13 +17,13 @@ Welcome to the game of " Tic Tac Toe ".
 
 [[ Tic Tac Toe ]](https://github.com/UP210671/UP210671_CPP/tree/main/U3) <----- [\CODE/](./04_Tic_Tac_Toe.cpp)
 
-[[ How to play ]](https://github.com/UP210671/UP210671_CPP/tree/main/U3#how-to-play-) <----- [\CODE/](./Ejercicio2.cpp)
+[[ How to play ]](https://github.com/UP210671/UP210671_CPP/tree/main/U3#how-to-play-)
 
 [[ Flowchart ]](https://github.com/UP210671/UP210671_CPP/tree/main/U3#flowchart-)
 
-[[Code execution and explanation]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-4vegetarian-pizza-ingredient-selection) <----- [\CODE/](./Ejercicio4.cpp)
+[[Code execution and explanation]](https://github.com/UP210671/UP210671_CPP/blob/main/U3/README.md#-code-execution-and-explanation--)
 
-[[Conclusion]](https://github.com/UP210671/UP210671_CPP/tree/main/U2#exercise-5average-temperature-maxium-and-minium-value) <----- [\CODE/](./Ejercicio5.cpp)
+[[Conclusion]](https://github.com/UP210671/UP210671_CPP/blob/main/U3/README.md#-conclusion)
 
 </div>
 <h1>
@@ -60,6 +60,8 @@ Welcome to the game of " Tic Tac Toe ".
 </H1>
 <h1></h1>
 <br>
+
+[[Return to Home]](https://github.com/UP210671/UP210671_CPP/tree/main/U3#welcome-to-the-game-of--tic-tac-toe--)
 
 <H1 align = "center"><span style="color:GREEN"> FLOWCHART  
 </span>
@@ -104,6 +106,9 @@ The tie is very unusual in the 2 player game mode so in case of a tie it will ap
 <img src="../imagenes/a1IMTTT/Captura%20desde%202022-11-24%2015-43-22.png" >
 <br>
 
+[[Return to Home]](https://github.com/UP210671/UP210671_CPP/tree/main/U3#welcome-to-the-game-of--tic-tac-toe--)
+
 <H1 align = "center"><span style="color:GREEN"> Conclusion
 </span></h1>
 In conclusion about this project I must say that it was not easy since what I had seen in class was not enough and you had to investigate a little more on the internet and understand things, but this helps me to know more about the subject and master it more for when I know I was busy using this knowledge, I took a lot of information and happiness since I never thought I was making a game with pure commands, one more achievement and thanks to this knowledge in the future we will be able to make several games that we did not know could be done with commands
+[[Return to Home]](https://github.com/UP210671/UP210671_CPP/tree/main/U3#welcome-to-the-game-of--tic-tac-toe--)
