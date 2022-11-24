@@ -80,11 +80,15 @@ Here when the game starts it gives you the option to choose which mode you want 
 
 # 2º Select mode 2 Players
 When choosing the 2 player game mode, the name of the game appears, your selected sign, whether you are player 1 or 2, the game board and the move you are going to make
+
 <img src="../imagenes/a1IMTTT/Captura%20desde%202022-11-24%2013-42-09.png" >
+
 # 3º To play 
 Choise your selected number
+
 # 4º How to win
 To win you must make either a row, column, diagonal of three of your indicated sign to win
+
 <img src="../imagenes/a1IMTTT/Captura%20desde%202022-11-24%2015-28-50.png" >
 
 # 5º Game over 
@@ -96,3 +100,10 @@ If you selected the VS CPU mode you should play by yourself waiting for the comp
 
 # 7º In case of a tie
 The tie is very unusual in the 2 player game mode so in case of a tie it will appear like this
+
+<img src="../imagenes/a1IMTTT/Captura%20desde%202022-11-24%2015-43-22.png" >
+<br>
+
+<H1 align = "center"><span style="color:GREEN"> Conclusion
+</span></h1>
+In conclusion about this project I must say that it was not easy since what I had seen in class was not enough and you had to investigate a little more on the internet and understand things, but this helps me to know more about the subject and master it more for when I know I was busy using this knowledge, I took a lot of information and happiness since I never thought I was making a game with pure commands, one more achievement and thanks to this knowledge in the future we will be able to make several games that we did not know could be done with commands
