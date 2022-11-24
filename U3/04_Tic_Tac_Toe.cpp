@@ -227,7 +227,7 @@ void board()
 
     co7=(tablero[7]== 'X')?33:(tablero[7]== 'O')?36:37;// 
     co8=(tablero[8]== 'X')?33:(tablero[8]== 'O')?36:37;//   ==funcion para cambiar el color si es X o O
-    co9=(tablero[9]== 'X')?33:(tablero[9]== 'O')?36:372;//
+    co9=(tablero[9]== 'X')?33:(tablero[9]== 'O')?36:37;//
     cout << "                                   " << "\033[1;" <<  co7 << "m" << tablero[7] << "\033[1;37m"<<"  |  " << "\033[1;" << co8 << "m" << tablero[8] <<"\033[1;37m"<< "  |  " << "\033[1;" <<  co9 << "m" << tablero[9] << endl;
     
     cout <<"\033[1;37m"<< "                                      |     |     " << endl << endl;
