@@ -19,7 +19,7 @@ Welcome to the game of " Tic Tac Toe ".
 
 [[ How to play ]](https://github.com/UP210671/UP210671_CPP/tree/main/U3#how-to-play-)
 
-[[ Flowchart ]](https://github.com/UP210671/UP210671_CPP/tree/main/U3#flowchart-)
+[[ Flowchart ]](https://github.com/UP210671/UP210671_CPP/blob/main/U3/README.md#-flowchart--)
 
 [[Code execution and explanation]](https://github.com/UP210671/UP210671_CPP/blob/main/U3/README.md#-code-execution-and-explanation--)
 
